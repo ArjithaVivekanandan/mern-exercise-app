@@ -77,7 +77,7 @@ onChangeUsername(e) {
 
   console.log(exercise);
 
-    axios.post('http://arjitha.me:1900/exercises/add', exercise)
+    axios.post('http://www.arjitha.me:1900/exercises/add', exercise)
    .then(res => console.log(res.data));
 
    window.location = '/';
