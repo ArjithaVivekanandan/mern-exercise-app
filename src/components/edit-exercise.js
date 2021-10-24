@@ -25,7 +25,7 @@ export default class EditExercises extends Component {
       }
 
       componentDidMount() {
-        axios.get('http://arjitha.me:1900/exercises/'+this.props.match.params.id)
+        axios.get('http://www.arjitha.me:1900/exercises/'+this.props.match.params.id)
           .then(response => {
             this.setState({
               username: response.data.username,
@@ -38,7 +38,7 @@ export default class EditExercises extends Component {
             console.log(error);
           })
 
-          axios.get('http://arjitha.me:1900/users/')
+          axios.get('http://www.arjitha.me:1900/users/')
           .then(response => {
             if (response.data.length > 0) {
               this.setState({
@@ -89,7 +89,7 @@ export default class EditExercises extends Component {
     
         console.log(exercise);
     
-        axios.post('http://arjitha.me:1900/exercises/update/' + this.props.match.params.id, exercise)
+        axios.post('http://www.arjitha.me:1900/exercises/update/' + this.props.match.params.id, exercise)
           .then(res => console.log(res.data));
     
         window.location = '/';

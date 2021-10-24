@@ -25,7 +25,7 @@ constructor(props){
 }
 
 componentDidMount() {
-    axios.get('http://arjitha.me:1900/users/')
+    axios.get('http://www.arjitha.me:1900/users/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
