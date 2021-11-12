@@ -1,4 +1,4 @@
-#Exercise Tracker
+Exercise Tracker
 
 An application where users can log their exercise description and duration and maintain a track of them.
 Technologies Used: MONGODB, EXPRESS, REACTJS, NODEJS
